@@ -1,0 +1,8 @@
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    background-color: #0c181c;
+    color: white;
+    min-height: 5vh;
+}

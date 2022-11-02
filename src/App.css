@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 .App {
   text-align: center;
+  /* background-image: url("../public/fondo.jpg"); */
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -34,5 +40,90 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.body{
+  display: flex;
+  flex-direction: row;
+  min-height: 85vh;
+}
+.contenedor1{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #b2e2f2; */
+  overflow: hidden;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/586744/pexels-photo-586744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.contenedor2{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Merriweather', serif;
+  background-color: #d2bead;
+  object-fit: cover;
+}
+.contenedor2 img{
+  width: 25%;
+  border-radius: 50%;
+  border: solid #0c181c 2px;
+}
+
+.contenedor2 .botones{
+  display: flex;
+  gap: 8px;
+}
+.contenedor2 .botones button{
+  width: 120px;
+  height: 40px;
+  background-color: #1d3d33;
+  border-radius: 8px;
+  cursor: pointer;
+  border-color:#1d3d33;
+  color: white;
+}
+.contenedor2 .botones button:hover{
+  background-color: #5c5e36;
+  border-color: #5c5e36;
+}
+
+.foto{
+  display: flex;
+  width: 80%;
+  height: 70%;
+  overflow: hidden;
+  justify-content: center;  
+}
+
+.foto img{
+  padding: 3px 10px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 100%;
+}
+
+@media(max-width: 600px){
+  .body{
+    flex-direction: column;
+  }
+  .contenedor1{
+    width: 100%;
+    height: 50%;
+  }
+  .contenedor2{
+    width: 100%;
+    height: 50%;
+  }
+  .contenedor2 img{
+    width: 25%;
+  }
+  .contenedor2 .botones{
+    display: flex;
+    gap: 4px;
+    padding-bottom: 4px;
   }
 }
